@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Jost', sans-serif;
+}
+
+body {
+	background-color: #f8f9fa;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.container {
+	width: 100%;
+	max-width: 800px;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	padding: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+}
+
+.form-section {
+	padding-right: 40px;
+	margin-top: 20px; /* Added margin-top for better centering */
+}
+
+.image-section {
+	background: #ff6b6b;
+	border-radius: 8px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	color: #333;
+	margin-bottom: 30px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+h3 {
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.form-group {
+	margin-bottom: 24px;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	color: #555;
+	font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+	width: 100%;
+	padding: 12px;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	font-size: 16px;
+	transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+	border-color: #ff6b6b;
+	outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+button {
+	padding: 14px 28px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	transition: background-color 0.3s ease;
+	width: 100%;
+	color: white;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+}
+
+button[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+button[type="button"] {
+	background-color: #f44336;
+}
+
+button[type="button"]:hover {
+	background-color: #da190b;
+}
+
+.error-message {
+	background-color: #ffebee;
+	border: 1px solid #ffcdd2;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		padding: 20px;
+	}
+
+	.form-section {
+		padding-right: 0;
+	}
+
+	.image-section {
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+}
