@@ -1,7 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
-import { useEffect, useRef } from 'react';
+import { useActionState, useEffect, useRef } from 'react';
+import { useFormStatus } from 'react-dom';
 import { useToast } from '@/hooks/use-toast';
 import { submitInquiry, type InquiryState } from '@/app/actions';
 import { Button } from './ui/button';
@@ -34,7 +34,7 @@ interface InquiryFormProps {
 
 export function InquiryForm({ serviceId }: InquiryFormProps) {
   const initialState: InquiryState = { message: null, errors: {}, success: false };
-  const [state, dispatch] = useFormState(submitInquiry, initialState);
+  const [state, dispatch] = useActionState(submitInquiry, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
 
