@@ -23,11 +23,7 @@ export function SiteHeader() {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Link href="/contact" className="hidden md:inline-flex">
-            <Button variant="default">
-              Submit Inquiry
-            </Button>
-          </Link>
+          
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -50,9 +46,6 @@ export function SiteHeader() {
                 <Link href="/contact" className="text-muted-foreground hover:text-foreground">
                   Contact
                 </Link>
-                <Button asChild className="mt-4">
-                  <Link href="/contact">Submit Inquiry</Link>
-                </Button>
               </nav>
             </SheetContent>
           </Sheet>
