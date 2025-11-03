@@ -1,14 +1,40 @@
+
+'use client';
+
 import { serviceCategories, services } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Loader2 } from 'lucide-react';
 import AiMatcher from '@/components/ai-matcher';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { generateVideo } from '@/ai/flows/video-generation-flow';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find(img => img.id === '11') || PlaceHolderImages[0];
+  const [heroVideo, setHeroVideo] = useState<string | null>(null);
+  const [isVideoLoading, setIsVideoLoading] = useState(true);
+
+  useEffect(() => {
+    const createVideo = async () => {
+      setIsVideoLoading(true);
+      try {
+        const { video } = await generateVideo({
+          prompt: 'A high-quality, cinematic animation of abstract data visualizations and futuristic user interfaces. Show glowing lines, intricate charts, and dynamic graphs that represent digital services and innovation. The style should be modern, clean, and professional, with a color palette that matches a tech-oriented brand.',
+        });
+        setHeroVideo(video);
+      } catch (error) {
+        console.error('Failed to generate hero video:', error);
+        // Fallback to a static image if video generation fails
+        const fallbackImage = PlaceHolderImages.find(img => img.id === '11') || PlaceHolderImages[0];
+        setHeroVideo(fallbackImage.imageUrl);
+      } finally {
+        setIsVideoLoading(false);
+      }
+    };
+    createVideo();
+  }, []);
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -18,7 +44,7 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline text-primary">
-                  Data-Driven Digital Services
+                  Dynamic Digital Services
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
                   microGT delivers professional data, video, and presentation services to elevate your brand.
@@ -39,16 +65,36 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                width={600}
-                height={400}
-                alt="Hero image"
-                data-ai-hint={heroImage.imageHint}
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
-              />
-            )}
+            <div className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last flex items-center justify-center bg-muted">
+              {isVideoLoading ? (
+                <div className="flex flex-col items-center gap-2">
+                  <Loader2 className="h-8 w-8 animate-spin text-primary" />
+                  <p className="text-muted-foreground text-sm">Generating animation...</p>
+                </div>
+              ) : heroVideo && heroVideo.startsWith('data:video') ? (
+                <video
+                  src={heroVideo}
+                  width="600"
+                  height="400"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              ) : heroVideo && heroVideo.startsWith('https') ? (
+                 <Image
+                    src={heroVideo}
+                    width={600}
+                    height={400}
+                    alt="Hero image"
+                    data-ai-hint="digital services innovation"
+                    className="w-full h-full object-cover"
+                  />
+              ) : (
+                <p className="text-destructive">Could not load video.</p>
+              )}
+            </div>
           </div>
         </div>
       </section>
