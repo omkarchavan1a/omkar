@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "1",
+      "description": "Sales Dashboard",
+      "imageUrl": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXNoYm9hcmQlMjBjaGFydHxlbnwwfHx8fDE3NjIxNzI2OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard chart"
+    },
+    {
+      "id": "2",
+      "description": "Customer Segmentation Report",
+      "imageUrl": "https://images.unsplash.com/photo-1728044849321-4cbffc50cc1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhbmFseXRpY3MlMjByZXBvcnR8ZW58MHx8fHwxNzYyMTcyNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "analytics report"
+    },
+    {
+      "id": "3",
+      "description": "Analytics Dashboard on a laptop",
+      "imageUrl": "https://images.unsplash.com/photo-1758521961744-939de61d5cb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXB0b3AlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYyMTcyNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop dashboard"
+    },
+    {
+      "id": "4",
+      "description": "Marketing campaign tracker",
+      "imageUrl": "https://images.unsplash.com/photo-1690191793753-49f801f5cca5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYXJrZXRpbmclMjBncmFwaHxlbnwwfHx8fDE3NjIxNzI2OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marketing graph"
+    },
+    {
+      "id": "5",
+      "description": "Product in a spotlight",
+      "imageUrl": "https://images.unsplash.com/photo-1677172954692-90cf8bdc91e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9kdWN0JTIwdmlkZW98ZW58MHx8fHwxNzYyMDgwMjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product video"
+    },
+    {
+      "id": "6",
+      "description": "Person telling a story",
+      "imageUrl": "https://images.unsplash.com/photo-1650513737698-5acc932dc9af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicmFuZCUyMHN0b3J5fGVufDB8fHx8MTc2MjE3MjY5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brand story"
+    },
+    {
+      "id": "7",
+      "description": "People at a conference",
+      "imageUrl": "https://images.unsplash.com/photo-1531058020387-3be344556be6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb25mZXJlbmNlJTIwZXZlbnR8ZW58MHx8fHwxNzYyMDU4OTg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "conference event"
+    },
+    {
+      "id": "8",
+      "description": "Person at a computer learning",
+      "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvbmxpbmUlMjB0cmFpbmluZ3xlbnwwfHx8fDE3NjIxNzI2OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online training"
+    },
+    {
+      "id": "9",
+      "description": "Presentation slide with charts",
+      "imageUrl": "https://images.unsplash.com/photo-1590098563298-a873b00c91a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwaXRjaCUyMGRlY2t8ZW58MHx8fHwxNzYyMTcyNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pitch deck"
+    },
+    {
+      "id": "10",
+      "description": "Financial charts on a screen",
+      "imageUrl": "https://images.unsplash.com/photo-1613442240291-32cb61381850?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbnZlc3RvciUyMHByZXNlbnRhdGlvbnxlbnwwfHx8fDE3NjIxNzI2OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "investor presentation"
+    },
+    {
+      "id": "11",
+      "description": "Person speaking on stage",
+      "imageUrl": "https://images.unsplash.com/photo-1709377418835-304afc0e064a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxrZXlub3RlJTIwc3BlZWNofGVufDB8fHx8MTc2MjE3MjY5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "keynote speech"
+    },
+    {
+      "id": "12",
+      "description": "Online webinar on a screen",
+      "imageUrl": "https://images.unsplash.com/photo-1559854036-2409f22a918a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJpbmFyJTIwc2xpZGVzfGVufDB8fHx8MTc2MjE3MjY5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "webinar slides"
+    }
+  ]
 }
