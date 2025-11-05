@@ -34,7 +34,7 @@ export default function ContactPage() {
               <MapPin className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h3 className="font-semibold">Location</h3>
-                <p className="text-muted-foreground">Remote First | New York, NY</p>
+                <p className="text-muted-foreground">Remote | india</p>
               </div>
             </div>
           </div>
